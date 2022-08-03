@@ -1,2 +1,2 @@
 # SkillLeet
-TOOOOOOOO FUNNY
+This Repo contains solutions for skillrack and leetcode problems
