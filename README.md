@@ -1,2 +1,2 @@
-# SkillLeet
-This Repo contains solutions for skillrack and leetcode problems
+# Skillrack
+This Repo contains solutions for skillrack problems
