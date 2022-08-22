@@ -1,4 +1,4 @@
-The program must accept a string S as the input. For every character in the string S the output 
+/*The program must accept a string S as the input. For every character in the string S the output 
 is printed based on the following conditions, 
 - If both the adjacent characters of the current character are alphabets, then the program must
 concatenate the subsequent and the preceding alphabets
@@ -34,4 +34,26 @@ So the preceding digit 4 and the subsequent digits 67 are concatenated. Hence 4
  Input:
 apple12354mango  
 Output: 
-aple aple appe 1354 1254 1234 mngo mago mano
+aple aple appe 1354 1254 1234 mngo mago mano*/
+#include <bits/stdc++.h>
+ 
+using namespace std;
+
+int main(int argc, char** argv)
+{
+    string s; cin >> s;
+    
+    for(int i=1; i<s.size()-1; i++){
+        if(isdigit(s[i-1])==isdigit(s[i+1])){
+            int low = i-1, high = i+1;
+            while(low>=0 && isdigit(s[low])==isdigit(s[i-1])){
+                low--;
+            }
+            while(high<s.size() && isdigit(s[high])==isdigit(s[i+1])){
+                high ++;
+            }
+            for(int j=low+1; j<=high-1; j++) if(j!=i) cout << s[j];
+            cout << " ";
+        }
+    }
+}`
