@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// 3 Passed 5 Failed
 int main() {
 	int n;
     scanf("%d",&n);
