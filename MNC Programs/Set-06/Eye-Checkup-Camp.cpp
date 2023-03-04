@@ -27,13 +27,7 @@ int main(int argc, char** argv)
         }
     }
     cout<<"Q1:"<<q1.size()*15<<" minutes"<<endl<<"Q2:"<<q2.size()*15<<" minutes";
-    // for(int i:q1){
-    //     cout<<i<<" ";
-    // }
-    // cout<<endl;
-    // for(int i:q2){
-    //     cout<<i<<" ";
-    // }
+    
 
 
 }
