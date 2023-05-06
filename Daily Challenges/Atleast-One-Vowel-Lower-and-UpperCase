@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+ 
+using namespace std;
+bool isvowel(char ch){
+    ch=tolower(ch);
+    return (ch=='a' or ch=='e' or ch=='i' or ch=='o' or ch=='u');
+}
+int main(int argc, char** argv)
+{
+    string s;
+    cin>>s;
+    bool f1=false,f2=false;
+    for(char &c:s){
+        if(isvowel(c) and isupper(c)){
+            f1=true;
+        }
+        else if(isvowel(c) and islower(c)){
+            f2=true;
+        }
+    }
+    cout<<(f1 and f2 ? "YES" : "NO");
+
+
+}
